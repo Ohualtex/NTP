@@ -1,6 +1,6 @@
 using System;
 
-namespace Hafta1_Odev
+namespace Lab_OgrenciKayit
 {
     class Ogrenci
     {

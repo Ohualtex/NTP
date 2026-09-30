@@ -1,6 +1,6 @@
 using System;
 
-namespace Hafta1_Odev
+namespace Odev_OgrenciKayit
 {
     class Program
     {

@@ -15,43 +15,42 @@ Bu depo, **Nesne Tabanlı Programlama (NTP)** dersi kapsamında gerçekleştiril
 
 ## 📂 Dizin Yapısı
 
-Depo, modüler ve temiz bir dosya organizasyonuna sahiptir:
+Depo, haftalık bazda modüler ve ölçeklenebilir bir dosya organizasyonuna sahiptir:
 
 ```text
 NTP/
-├── README.md                     # Depo tanıtımı ve kılavuz
-├── dokumanlar/                   # Laboratuvar föyleri ve ders dökümantasyonu
-│   └── Hafta1_Ogrenci_Foyu.pdf
-├── arsiv/                        # Teslim edilen sıkıştırılmış (.zip) proje paketleri
-│   ├── Hafta1_OgrenciKayit.zip
-│   └── Hafta1_Odev.zip
-├── Hafta1_OgrenciKayit/          # Hafta 1 Laboratuvar Teslim Projesi
-│   ├── Hafta1_OgrenciKayit.csproj
-│   ├── Ogrenci.cs
-│   └── Program.cs
-└── Hafta1_Odev/                  # Hafta 1 Gelecek Haftaya Hazırlık Ödevi Projesi
-    ├── Hafta1_Odev.csproj
-    ├── Ogrenci.cs
-    └── Program.cs
+├── README.md                     # Ana depo tanıtımı ve genel kılavuz
+├── .gitignore                    # Git takip dışı bırakma kuralları
+└── Hafta01/                      # 1. Hafta: Ortam Kurulumu, İlk Sınıf ve Nesne
+    ├── README.md                 # Hafta 1 özel dökümantasyonu
+    ├── Hafta1_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
+    ├── Lab_OgrenciKayit/         # Laboratuvar teslim projesi
+    │   ├── Lab_OgrenciKayit.csproj
+    │   ├── Ogrenci.cs
+    │   └── Program.cs
+    └── Odev_OgrenciKayit/        # Gelecek haftaya hazırlık ödevi projesi
+        ├── Odev_OgrenciKayit.csproj
+        ├── Ogrenci.cs
+        └── Program.cs
 ```
 
 ---
 
 ## 📅 Haftalık İlerleme ve Müfredat
 
-| Hafta | Konu | İlgili Projeler | Durum |
+| Hafta | Konu | İlgili Dizin & Projeler | Durum |
 | :---: | :--- | :--- | :---: |
-| **01** | Ortam Kurulumu, İlk Sınıf (`class`), Nesne (`object`), Alanlar (`field`), Metotlar (`method`) ve Konsol Girdisi | `Hafta1_OgrenciKayit`<br>`Hafta1_Odev` |  Tamamlandı |
-| **02** | Kapsülleme (Encapsulation), Erişim Belirteçleri (`public`/`private`), Özellikler (`Properties`) | — | ⏳ Planlanan |
-| **03** | Yapıcı Metotlar (Constructors), Aşırı Yükleme (Overloading) | — | ⏳ Planlanan |
-| **04** | Koleksiyonlar (`List<T>`), Dizi ve Nesne Yönetimi | — | ⏳ Planlanan |
-| **05+** | Kalıtım (Inheritance), Polimorfizm, Soyutlama (Abstraction), Arayüzler (Interfaces) | — | ⏳ Planlanan |
+| **01** | Ortam Kurulumu, İlk Sınıf (`class`), Nesne (`object`), Alanlar (`field`), Metotlar (`method`) ve Konsol Girdisi | [`Hafta01/`](Hafta01/)<br>• `Lab_OgrenciKayit`<br>• `Odev_OgrenciKayit` |  Tamamlandı |
+| **02** | Kapsülleme (Encapsulation), Erişim Belirteçleri (`public`/`private`), Özellikler (`Properties`) | `Hafta02/` | ⏳ Planlanan |
+| **03** | Yapıcı Metotlar (Constructors), Aşırı Yükleme (Overloading) | `Hafta03/` | ⏳ Planlanan |
+| **04** | Koleksiyonlar (`List<T>`), Dizi ve Nesne Yönetimi | `Hafta04/` | ⏳ Planlanan |
+| **05+** | Kalıtım (Inheritance), Polimorfizm, Soyutlama (Abstraction), Arayüzler (Interfaces) | `Hafta05+/` | ⏳ Planlanan |
 
 ---
 
 ## 🚀 Projeleri Çalıştırma Kılavuzu
 
-Depodaki herhangi bir projeyi terminal üzerinden derlemek ve çalıştırmak için aşağıdaki adımları izleyebilirsiniz.
+Depodaki herhangi bir projeyi terminal üzerinden doğrudan ana dizinden derleyebilir ve çalıştırabilirsiniz.
 
 ### 1. Gereksinim Kontrolü
 Sisteminizde .NET 10 SDK'nın kurulu olduğundan emin olun:
@@ -59,26 +58,27 @@ Sisteminizde .NET 10 SDK'nın kurulu olduğundan emin olun:
 dotnet --version
 ```
 
-### 2. Projeyi Derleme (Build)
-İlgili proje klasörünün içine girmeden doğrudan ana dizinden derlemek için:
+### 2. Projeleri Derleme (Build)
 ```bash
-dotnet build Hafta1_OgrenciKayit/Hafta1_OgrenciKayit.csproj
+dotnet build Hafta01/Lab_OgrenciKayit/Lab_OgrenciKayit.csproj
+dotnet build Hafta01/Odev_OgrenciKayit/Odev_OgrenciKayit.csproj
 ```
 
-### 3. Projeyi Çalıştırma (Run)
+### 3. Projeleri Çalıştırma (Run)
 * **Hafta 1 Laboratuvar Projesi:**
   ```bash
-  dotnet run --project Hafta1_OgrenciKayit
+  dotnet run --project Hafta01/Lab_OgrenciKayit
   ```
 * **Hafta 1 Hazırlık Ödevi:**
   ```bash
-  dotnet run --project Hafta1_Odev
+  dotnet run --project Hafta01/Odev_OgrenciKayit
   ```
 
 ---
 
 ## 📌 Kod ve İsimlendirme Standartları
 
+* **Modüler Mimarisi:** Her haftanın materyali (`HaftaXX/`) kendi föyü, README'si ve projeleri ile izole paketlenir.
 * **ASCII Standartları:** Çapraz platform ve terminal uyumluluğu için tüm dosya, klasör ve değişken isimlerinde ASCII karakterler tercih edilmektedir.
 * **Klasik Şablon:** Başlangıç aşamasında C# program anatomisini (`class Program` ve `static void Main`) net kavramak adına *Top-level statements* kullanılmamaktadır.
 * **Nesne Yönelimli Tasarım (OOP):** Her sınıf kendi bağımsız dosyasında (örn. `Ogrenci.cs`) tanımlanmakta, sorumluluklar sınıflara ve metotlara dağıtılmaktadır.
