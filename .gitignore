@@ -22,13 +22,16 @@ out/
 *.sln.docstates
 
 # ====================================================================
-# Local Delivery Archives / Binaries (Not committed to Git)
+# Local Delivery Archives / Documents / Reports (Not committed to Git)
 # ====================================================================
 arsiv/
+dokumanlar/
 *.zip
 *.7z
 *.rar
 *.tar.gz
+*.docx
+*.doc
 
 # ====================================================================
 # macOS System Files
