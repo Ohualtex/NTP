@@ -46,10 +46,18 @@ NTP/
 └── Hafta03/                      # 3. Hafta: Metotlar ve Nesne İlişkileri (Overloading & Composition)
     ├── README.md                 # Hafta 3 özel dökümantasyonu
     ├── Hafta3_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
-    └── Lab_Kutuphane/            # Laboratuvar teslim projesi (Kütüphane Otomasyonu)
-        ├── Lab_Kutuphane.csproj
-        ├── Kitap.cs
+    ├── Lab_Kutuphane/            # Laboratuvar teslim projesi (Kütüphane Otomasyonu)
+    │   ├── Lab_Kutuphane.csproj
+    │   ├── Kitap.cs
+    │   ├── Uye.cs
+    │   ├── Kutuphane.cs
+    │   └── Program.cs
+    └── Odev_Kutuphane/           # Gelecek haftaya hazırlık ödevi (Personel & Kalıtım Hazırlığı)
+        ├── Odev_Kutuphane.csproj
+        ├── Kisi.cs
         ├── Uye.cs
+        ├── Personel.cs
+        ├── Kitap.cs
         ├── Kutuphane.cs
         └── Program.cs
 ```
@@ -62,7 +70,7 @@ NTP/
 | :---: | :--- | :--- | :---: |
 | **01** | Ortam Kurulumu, İlk Sınıf (`class`), Nesne (`object`), Alanlar (`field`), Metotlar (`method`) ve Konsol Girdisi | [`Hafta01/`](Hafta01/)<br>• `Lab_OgrenciKayit`<br>• `Odev_OgrenciKayit` |  Tamamlandı |
 | **02** | Kapsülleme (Encapsulation), Erişim Belirteçleri (`public`/`private`), Özellikler (`Properties`), Yapıcı Metotlar (`Constructors`) | [`Hafta02/`](Hafta02/)<br>• `Lab_BankaHesabi`<br>• `Odev_BankaHesabi` |  Tamamlandı |
-| **03** | Metotlar, Metot Aşırı Yükleme (Method Overloading) ve Nesne İlişkileri (Composition) | [`Hafta03/`](Hafta03/)<br>• `Lab_Kutuphane` |  Tamamlandı |
+| **03** | Metotlar, Metot Aşırı Yükleme (Method Overloading) ve Nesne İlişkileri (Composition) | [`Hafta03/`](Hafta03/)<br>• `Lab_Kutuphane`<br>• `Odev_Kutuphane` |  Tamamlandı |
 | **04** | Koleksiyonlar (`List<T>`), Dizi ve Nesne Yönetimi | `Hafta04/` | ⏳ Planlanan |
 | **05+** | Kalıtım (Inheritance), Polimorfizm, Soyutlama (Abstraction), Arayüzler (Interfaces) | `Hafta05+/` | ⏳ Planlanan |
 
@@ -79,19 +87,20 @@ dotnet --version
 ```
 
 ### 2. Projeleri Derleme (Build)
-* **Hafta 1 Projeleri:**
+* **Hafta 1:**
   ```bash
   dotnet build Hafta01/Lab_OgrenciKayit/Lab_OgrenciKayit.csproj
   dotnet build Hafta01/Odev_OgrenciKayit/Odev_OgrenciKayit.csproj
   ```
-* **Hafta 2 Projeleri:**
+* **Hafta 2:**
   ```bash
   dotnet build Hafta02/Lab_BankaHesabi/Lab_BankaHesabi.csproj
   dotnet build Hafta02/Odev_BankaHesabi/Odev_BankaHesabi.csproj
   ```
-* **Hafta 3 Projeleri:**
+* **Hafta 3:**
   ```bash
   dotnet build Hafta03/Lab_Kutuphane/Lab_Kutuphane.csproj
+  dotnet build Hafta03/Odev_Kutuphane/Odev_Kutuphane.csproj
   ```
 
 ### 3. Projeleri Çalıştırma (Run)
@@ -108,6 +117,7 @@ dotnet --version
 * **Hafta 3:**
   ```bash
   dotnet run --project Hafta03/Lab_Kutuphane
+  dotnet run --project Hafta03/Odev_Kutuphane
   ```
 
 ---
