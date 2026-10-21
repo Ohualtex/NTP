@@ -44,21 +44,31 @@ NTP/
 │       ├── Hesap.cs
 │       └── Program.cs
 └── Hafta03/                      # 3. Hafta: Metotlar ve Nesne İlişkileri (Overloading & Composition)
-    ├── README.md                 # Hafta 3 özel dökümantasyonu
-    ├── Hafta3_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
-    ├── Lab_Kutuphane/            # Laboratuvar teslim projesi (Kütüphane Otomasyonu)
-    │   ├── Lab_Kutuphane.csproj
-    │   ├── Kitap.cs
-    │   ├── Uye.cs
-    │   ├── Kutuphane.cs
+│   ├── README.md                 # Hafta 3 özel dökümantasyonu
+│   ├── Hafta3_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
+│   ├── Lab_Kutuphane/            # Laboratuvar teslim projesi (Kütüphane Otomasyonu)
+│   │   ├── Lab_Kutuphane.csproj
+│   │   ├── Kitap.cs
+│   │   ├── Uye.cs
+│   │   ├── Kutuphane.cs
+│   │   └── Program.cs
+│   └── Odev_Kutuphane/           # Gelecek haftaya hazırlık ödevi (Personel & Kalıtım Hazırlığı)
+│       ├── Odev_Kutuphane.csproj
+│       ├── Kisi.cs
+│       ├── Uye.cs
+│       ├── Personel.cs
+│       ├── Kitap.cs
+│       ├── Kutuphane.cs
+│       └── Program.cs
+└── Hafta04/                      # 4. Hafta: Diziler ve Metotlar (Arrays & Methods)
+    ├── README.md                 # Hafta 4 özel dökümantasyonu
+    ├── Hafta4_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
+    ├── Lab_DiziAnaliz/           # Laboratuvar teslim projesi (Sayı Dizisi Analiz Aracı)
+    │   ├── Lab_DiziAnaliz.csproj
     │   └── Program.cs
-    └── Odev_Kutuphane/           # Gelecek haftaya hazırlık ödevi (Personel & Kalıtım Hazırlığı)
-        ├── Odev_Kutuphane.csproj
-        ├── Kisi.cs
-        ├── Uye.cs
-        ├── Personel.cs
-        ├── Kitap.cs
-        ├── Kutuphane.cs
+    └── Odev_OgrenciNotDizi/      # Gelecek haftaya hazırlık ödevi (Öğrenci Not Dizisi & Nesne Metotları)
+        ├── Odev_OgrenciNotDizi.csproj
+        ├── Ogrenci.cs
         └── Program.cs
 ```
 
@@ -67,12 +77,12 @@ NTP/
 ## 📅 Haftalık İlerleme ve Müfredat
 
 | Hafta | Konu | İlgili Dizin & Projeler | Durum |
-| :---: | :--- | :--- | :---: |
+| :---: | :--- | :--- | :--- |
 | **01** | Ortam Kurulumu, İlk Sınıf (`class`), Nesne (`object`), Alanlar (`field`), Metotlar (`method`) ve Konsol Girdisi | [`Hafta01/`](Hafta01/)<br>• `Lab_OgrenciKayit`<br>• `Odev_OgrenciKayit` |  Tamamlandı |
 | **02** | Kapsülleme (Encapsulation), Erişim Belirteçleri (`public`/`private`), Özellikler (`Properties`), Yapıcı Metotlar (`Constructors`) | [`Hafta02/`](Hafta02/)<br>• `Lab_BankaHesabi`<br>• `Odev_BankaHesabi` |  Tamamlandı |
 | **03** | Metotlar, Metot Aşırı Yükleme (Method Overloading) ve Nesne İlişkileri (Composition) | [`Hafta03/`](Hafta03/)<br>• `Lab_Kutuphane`<br>• `Odev_Kutuphane` |  Tamamlandı |
-| **04** | Koleksiyonlar (`List<T>`), Dizi ve Nesne Yönetimi | `Hafta04/` | ⏳ Planlanan |
-| **05+** | Kalıtım (Inheritance), Polimorfizm, Soyutlama (Abstraction), Arayüzler (Interfaces) | `Hafta05+/` | ⏳ Planlanan |
+| **04** | Diziler (Arrays), `static` Metotlar, Dizi Parametreleri, `params`, `Array.Sort` & `Array.Reverse` | [`Hafta04/`](Hafta04/)<br>• `Lab_DiziAnaliz`<br>• `Odev_OgrenciNotDizi` |  Tamamlandı |
+| **05+** | Nesneye Ait Metotlar, Yapıcı Metotlar (Constructors), Kalıtım (Inheritance), Polimorfizm | `Hafta05+/` | ⏳ Planlanan |
 
 ---
 
@@ -102,6 +112,11 @@ dotnet --version
   dotnet build Hafta03/Lab_Kutuphane/Lab_Kutuphane.csproj
   dotnet build Hafta03/Odev_Kutuphane/Odev_Kutuphane.csproj
   ```
+* **Hafta 4:**
+  ```bash
+  dotnet build Hafta04/Lab_DiziAnaliz/Lab_DiziAnaliz.csproj
+  dotnet build Hafta04/Odev_OgrenciNotDizi/Odev_OgrenciNotDizi.csproj
+  ```
 
 ### 3. Projeleri Çalıştırma (Run)
 * **Hafta 1:**
@@ -118,6 +133,11 @@ dotnet --version
   ```bash
   dotnet run --project Hafta03/Lab_Kutuphane
   dotnet run --project Hafta03/Odev_Kutuphane
+  ```
+* **Hafta 4:**
+  ```bash
+  dotnet run --project Hafta04/Lab_DiziAnaliz
+  dotnet run --project Hafta04/Odev_OgrenciNotDizi
   ```
 
 ---
