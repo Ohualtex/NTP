@@ -60,15 +60,23 @@ NTP/
 │       ├── Kitap.cs
 │       ├── Kutuphane.cs
 │       └── Program.cs
-└── Hafta04/                      # 4. Hafta: Diziler ve Metotlar (Arrays & Methods)
-    ├── README.md                 # Hafta 4 özel dökümantasyonu
-    ├── Hafta4_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
-    ├── Lab_DiziAnaliz/           # Laboratuvar teslim projesi (Sayı Dizisi Analiz Aracı)
-    │   ├── Lab_DiziAnaliz.csproj
-    │   └── Program.cs
-    └── Odev_OgrenciNotDizi/      # Gelecek haftaya hazırlık ödevi (Öğrenci Not Dizisi & Nesne Metotları)
-        ├── Odev_OgrenciNotDizi.csproj
-        ├── Ogrenci.cs
+├── Hafta04/                      # 4. Hafta: Diziler ve Metotlar (Arrays & Methods)
+│   ├── README.md                 # Hafta 4 özel dökümantasyonu
+│   ├── Hafta4_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
+│   ├── Lab_DiziAnaliz/           # Laboratuvar teslim projesi (Sayı Dizisi Analiz Aracı)
+│   │   ├── Lab_DiziAnaliz.csproj
+│   │   └── Program.cs
+│   └── Odev_OgrenciNotDizi/      # Gelecek haftaya hazırlık ödevi (Öğrenci Not Dizisi & Nesne Metotları)
+│       ├── Odev_OgrenciNotDizi.csproj
+│       ├── Ogrenci.cs
+│       └── Program.cs
+└── Hafta05/                      # 5. Hafta: Sınıflar, Yapıcı Metotlar ve Statik Üyeler
+    ├── README.md                 # Hafta 5 özel dökümantasyonu
+    ├── Hafta5_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
+    └── Lab_Evim/                 # Laboratuvar teslim projesi (Evim Otomasyonu)
+        ├── Lab_Evim.csproj
+        ├── Kisi.cs
+        ├── Ev.cs
         └── Program.cs
 ```
 
@@ -82,7 +90,8 @@ NTP/
 | **02** | Kapsülleme (Encapsulation), Erişim Belirteçleri (`public`/`private`), Özellikler (`Properties`), Yapıcı Metotlar (`Constructors`) | [`Hafta02/`](Hafta02/)<br>• `Lab_BankaHesabi`<br>• `Odev_BankaHesabi` |  Tamamlandı |
 | **03** | Metotlar, Metot Aşırı Yükleme (Method Overloading) ve Nesne İlişkileri (Composition) | [`Hafta03/`](Hafta03/)<br>• `Lab_Kutuphane`<br>• `Odev_Kutuphane` |  Tamamlandı |
 | **04** | Diziler (Arrays), `static` Metotlar, Dizi Parametreleri, `params`, `Array.Sort` & `Array.Reverse` | [`Hafta04/`](Hafta04/)<br>• `Lab_DiziAnaliz`<br>• `Odev_OgrenciNotDizi` |  Tamamlandı |
-| **05+** | Nesneye Ait Metotlar, Yapıcı Metotlar (Constructors), Kalıtım (Inheritance), Polimorfizm | `Hafta05+/` | ⏳ Planlanan |
+| **05** | Sınıflar, Property (get/set) Doğrulama, Yapıcı Metotlar (Constructor), Statik Sayaç ve Sabit Üyeler | [`Hafta05/`](Hafta05/)<br>• `Lab_Evim` |  Tamamlandı |
+| **06+** | Operatör Aşırı Yükleme, İndeksleyiciler, Struct ve Enum Sabitleri | `Hafta06+/` | ⏳ Planlanan |
 
 ---
 
@@ -117,6 +126,10 @@ dotnet --version
   dotnet build Hafta04/Lab_DiziAnaliz/Lab_DiziAnaliz.csproj
   dotnet build Hafta04/Odev_OgrenciNotDizi/Odev_OgrenciNotDizi.csproj
   ```
+* **Hafta 5:**
+  ```bash
+  dotnet build Hafta05/Lab_Evim/Lab_Evim.csproj
+  ```
 
 ### 3. Projeleri Çalıştırma (Run)
 * **Hafta 1:**
@@ -138,6 +151,10 @@ dotnet --version
   ```bash
   dotnet run --project Hafta04/Lab_DiziAnaliz
   dotnet run --project Hafta04/Odev_OgrenciNotDizi
+  ```
+* **Hafta 5:**
+  ```bash
+  dotnet run --project Hafta05/Lab_Evim
   ```
 
 ---
