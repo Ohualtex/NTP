@@ -41,3 +41,17 @@ Bu haftanın detaylı yönergesi ve görev föyüne aşağıdaki dosyadan ulaşa
   dotnet run --project Hafta05/Lab_Evim
   ```
 
+---
+
+### 2. `Odev_YapiciAsiriYukleme/` (Gelecek Haftaya Hazırlık Ödevi)
+* **Açıklama:** Föydeki Bölüm 8 şartlarına uygun yapıcı metot aşırı yüklemesi (Constructor Overloading) uygulaması.
+* **Sınıflar & İşlevler:**
+  - `Kisi(string ad)`: Sadece isim alan yapıcı metot.
+  - `Kisi(string ad, int dogumYili)`: İsim ve doğum yılı alan yapıcı metot.
+  - `Kisi(string ad, int dogumYili, string meslek)`: Tam parametreli yapıcı metot.
+  - **Constructor Chaining (`: this(...)`):** Kod tekrarını önleyerek tüm yapıcıları ana yapıcı üzerinden zincirleme çalıştırma.
+* **Çalıştırma:**
+  ```bash
+  dotnet run --project Hafta05/Odev_YapiciAsiriYukleme
+  ```
+

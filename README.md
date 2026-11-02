@@ -73,10 +73,14 @@ NTP/
 └── Hafta05/                      # 5. Hafta: Sınıflar, Yapıcı Metotlar ve Statik Üyeler
     ├── README.md                 # Hafta 5 özel dökümantasyonu
     ├── Hafta5_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
-    └── Lab_Evim/                 # Laboratuvar teslim projesi (Evim Otomasyonu)
-        ├── Lab_Evim.csproj
+    ├── Lab_Evim/                 # Laboratuvar teslim projesi (Evim Otomasyonu)
+    │   ├── Lab_Evim.csproj
+    │   ├── Kisi.cs
+    │   ├── Ev.cs
+    │   └── Program.cs
+    └── Odev_YapiciAsiriYukleme/  # Gelecek haftaya hazırlık ödevi (Constructor Overloading)
+        ├── Odev_YapiciAsiriYukleme.csproj
         ├── Kisi.cs
-        ├── Ev.cs
         └── Program.cs
 ```
 
@@ -90,7 +94,7 @@ NTP/
 | **02** | Kapsülleme (Encapsulation), Erişim Belirteçleri (`public`/`private`), Özellikler (`Properties`), Yapıcı Metotlar (`Constructors`) | [`Hafta02/`](Hafta02/)<br>• `Lab_BankaHesabi`<br>• `Odev_BankaHesabi` |  Tamamlandı |
 | **03** | Metotlar, Metot Aşırı Yükleme (Method Overloading) ve Nesne İlişkileri (Composition) | [`Hafta03/`](Hafta03/)<br>• `Lab_Kutuphane`<br>• `Odev_Kutuphane` |  Tamamlandı |
 | **04** | Diziler (Arrays), `static` Metotlar, Dizi Parametreleri, `params`, `Array.Sort` & `Array.Reverse` | [`Hafta04/`](Hafta04/)<br>• `Lab_DiziAnaliz`<br>• `Odev_OgrenciNotDizi` |  Tamamlandı |
-| **05** | Sınıflar, Property (get/set) Doğrulama, Yapıcı Metotlar (Constructor), Statik Sayaç ve Sabit Üyeler | [`Hafta05/`](Hafta05/)<br>• `Lab_Evim` |  Tamamlandı |
+| **05** | Sınıflar, Property (get/set) Doğrulama, Yapıcı Metotlar (Constructor), Statik Sayaç ve Sabit Üyeler | [`Hafta05/`](Hafta05/)<br>• `Lab_Evim`<br>• `Odev_YapiciAsiriYukleme` |  Tamamlandı |
 | **06+** | Operatör Aşırı Yükleme, İndeksleyiciler, Struct ve Enum Sabitleri | `Hafta06+/` | ⏳ Planlanan |
 
 ---
@@ -129,6 +133,7 @@ dotnet --version
 * **Hafta 5:**
   ```bash
   dotnet build Hafta05/Lab_Evim/Lab_Evim.csproj
+  dotnet build Hafta05/Odev_YapiciAsiriYukleme/Odev_YapiciAsiriYukleme.csproj
   ```
 
 ### 3. Projeleri Çalıştırma (Run)
@@ -155,6 +160,7 @@ dotnet --version
 * **Hafta 5:**
   ```bash
   dotnet run --project Hafta05/Lab_Evim
+  dotnet run --project Hafta05/Odev_YapiciAsiriYukleme
   ```
 
 ---
