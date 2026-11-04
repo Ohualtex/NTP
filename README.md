@@ -77,11 +77,15 @@ NTP/
 └── Hafta06/                      # 6. Hafta: Operatör Aşırı Yükleme, İndeksleyiciler, Yapılar ve Enum
     ├── README.md                 # Hafta 6 özel dökümantasyonu
     ├── Hafta6_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
-    └── Lab_Kesirler/             # Laboratuvar teslim projesi (Kesirler Otomasyonu)
-        ├── Lab_Kesirler.csproj
+    ├── Lab_Kesirler/             # Laboratuvar teslim projesi (Kesirler Otomasyonu)
+    │   ├── Lab_Kesirler.csproj
+    │   ├── Kesir.cs
+    │   ├── Islem.cs
+    │   ├── KesirKutusu.cs
+    │   └── Program.cs
+    └── Odev_KesirGelismis/       # Gelecek haftaya hazırlık ödevi (Gelişmiş Kesir & EBOB Sadeleştirme)
+        ├── Odev_KesirGelismis.csproj
         ├── Kesir.cs
-        ├── Islem.cs
-        ├── KesirKutusu.cs
         └── Program.cs
 ```
 
@@ -96,7 +100,7 @@ NTP/
 | **03** | Metotlar, Metot Aşırı Yükleme (Method Overloading) ve Nesne İlişkileri (Composition) | [`Hafta03/`](Hafta03/)<br>• `Lab_Kutuphane`<br>• `Odev_Kutuphane` |  Tamamlandı |
 | **04** | Diziler (Arrays), `static` Metotlar, Dizi Parametreleri, `params`, `Array.Sort` & `Array.Reverse` | [`Hafta04/`](Hafta04/)<br>• `Lab_DiziAnaliz`<br>• `Odev_OgrenciNotDizi` |  Tamamlandı |
 | **05** | Sınıflar, Property (get/set) Doğrulama, Yapıcı Metotlar (Constructor), Statik Sayaç ve Sabit Üyeler | [`Hafta05/`](Hafta05/)<br>• `Lab_Evim`<br>• `Odev_YapiciAsiriYukleme` |  Tamamlandı |
-| **06** | Operatör Aşırı Yükleme (`+`, `*`, `==`, `!=`), İndeksleyiciler (`this[int]`), Yapılar (`struct`) ve `enum` Sabitleri | [`Hafta06/`](Hafta06/)<br>• `Lab_Kesirler` |  Tamamlandı |
+| **06** | Operatör Aşırı Yükleme (`+`, `*`, `==`, `!=`), İndeksleyiciler (`this[int]`), Yapılar (`struct`) ve `enum` Sabitleri | [`Hafta06/`](Hafta06/)<br>• `Lab_Kesirler`<br>• `Odev_KesirGelismis` |  Tamamlandı |
 | **07+** | Kalıtım (Inheritance), Polimorfizm, Soyutlama (Abstraction), Arayüzler (Interfaces) | `Hafta07+/` | ⏳ Planlanan |
 
 ---
@@ -140,6 +144,7 @@ dotnet --version
 * **Hafta 6:**
   ```bash
   dotnet build Hafta06/Lab_Kesirler/Lab_Kesirler.csproj
+  dotnet build Hafta06/Odev_KesirGelismis/Odev_KesirGelismis.csproj
   ```
 
 ### 3. Projeleri Çalıştırma (Run)
@@ -171,6 +176,7 @@ dotnet --version
 * **Hafta 6:**
   ```bash
   dotnet run --project Hafta06/Lab_Kesirler
+  dotnet run --project Hafta06/Odev_KesirGelismis
   ```
 
 ---

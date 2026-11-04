@@ -44,3 +44,15 @@ Bu haftanın detaylı yönergesi ve görev föyüne aşağıdaki dosyadan ulaşa
   dotnet run --project Hafta06/Lab_Kesirler
   ```
 
+---
+
+### 2. `Odev_KesirGelismis/` (Gelecek Haftaya Hazırlık Ödevi)
+* **Açıklama:** Föydeki Bölüm 8 şartlarına uygun çıkarma (`-`), bölme (`/`) operatörleri ve EBOB ile rasyonel sadeleştirme uygulaması.
+* **Sınıflar & İşlevler:**
+  - `operator -` ve `operator /` operatörlerinin aşırı yüklenmesi.
+  - **Öklid EBOB Algoritması:** Pay ve paydanın en büyük ortak bölenini bularak kesirleri en sade rasyonel biçime dönüştüren `Sadelestir()` metodu ($12/16 \rightarrow 3/4$, $2/4 \rightarrow 1/2$).
+* **Çalıştırma:**
+  ```bash
+  dotnet run --project Hafta06/Odev_KesirGelismis
+  ```
+
