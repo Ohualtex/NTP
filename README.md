@@ -74,19 +74,26 @@ NTP/
 │       ├── Odev_YapiciAsiriYukleme.csproj
 │       ├── Kisi.cs
 │       └── Program.cs
-└── Hafta06/                      # 6. Hafta: Operatör Aşırı Yükleme, İndeksleyiciler, Yapılar ve Enum
-    ├── README.md                 # Hafta 6 özel dökümantasyonu
-    ├── Hafta6_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
-    ├── Lab_Kesirler/             # Laboratuvar teslim projesi (Kesirler Otomasyonu)
-    │   ├── Lab_Kesirler.csproj
-    │   ├── Kesir.cs
-    │   ├── Islem.cs
-    │   ├── KesirKutusu.cs
-    │   └── Program.cs
-    └── Odev_KesirGelismis/       # Gelecek haftaya hazırlık ödevi (Gelişmiş Kesir & EBOB Sadeleştirme)
-        ├── Odev_KesirGelismis.csproj
-        ├── Kesir.cs
-        └── Program.cs
+├── Hafta06/                      # 6. Hafta: Operatör Aşırı Yükleme, İndeksleyiciler, Yapılar ve Enum
+│   ├── README.md                 # Hafta 6 özel dökümantasyonu
+│   ├── Hafta6_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
+│   ├── Lab_Kesirler/             # Laboratuvar teslim projesi (Kesirler Otomasyonu)
+│   │   ├── Lab_Kesirler.csproj
+│   │   ├── Kesir.cs
+│   │   ├── Islem.cs
+│   │   ├── KesirKutusu.cs
+│   │   └── Program.cs
+│   └── Odev_KesirGelismis/       # Gelecek haftaya hazırlık ödevi (Gelişmiş Kesir & EBOB Sadeleştirme)
+│       ├── Odev_KesirGelismis.csproj
+│       ├── Kesir.cs
+│       └── Program.cs
+└── Hafta07/                      # 7. Hafta: İsim Alanları, Takma İsimler ve Kütüphane (.dll)
+    ├── README.md                 # Hafta 7 özel dökümantasyonu
+    ├── Hafta7_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
+    └── Lab_IsimAlanlariVeKutuphane/
+        ├── Lab_IsimAlanlariVeKutuphane.sln
+        ├── Hafta7_IsimAlanlari/  # Ana Konsol Uygulaması (Bankacilik/Oyun/Okul Hesap + Alias)
+        └── MatematikKutuphane/   # Sınıf Kütüphanesi (.dll — Islemler & MatematikKutuphane.Ileri)
 ```
 
 ---
@@ -101,7 +108,8 @@ NTP/
 | **04** | Diziler (Arrays), `static` Metotlar, Dizi Parametreleri, `params`, `Array.Sort` & `Array.Reverse` | [`Hafta04/`](Hafta04/)<br>• `Lab_DiziAnaliz`<br>• `Odev_OgrenciNotDizi` |  Tamamlandı |
 | **05** | Sınıflar, Property (get/set) Doğrulama, Yapıcı Metotlar (Constructor), Statik Sayaç ve Sabit Üyeler | [`Hafta05/`](Hafta05/)<br>• `Lab_Evim`<br>• `Odev_YapiciAsiriYukleme` |  Tamamlandı |
 | **06** | Operatör Aşırı Yükleme (`+`, `*`, `==`, `!=`), İndeksleyiciler (`this[int]`), Yapılar (`struct`) ve `enum` Sabitleri | [`Hafta06/`](Hafta06/)<br>• `Lab_Kesirler`<br>• `Odev_KesirGelismis` |  Tamamlandı |
-| **07+** | Kalıtım (Inheritance), Polimorfizm, Soyutlama (Abstraction), Arayüzler (Interfaces) | `Hafta07+/` | ⏳ Planlanan |
+| **07** | İsim Alanları (`namespace`), Takma İsimler (`using alias`), Sınıf Kütüphanesi (`.dll`) ve İç İçe İsim Alanları | [`Hafta07/`](Hafta07/)<br>• `Lab_IsimAlanlariVeKutuphane` |  Lab Tamamlandı |
+| **08+** | Kalıtım (Inheritance), Polimorfizm, Soyutlama (Abstraction), Arayüzler (Interfaces) | `Hafta08+/` | ⏳ Planlanan |
 
 ---
 
@@ -146,6 +154,10 @@ dotnet --version
   dotnet build Hafta06/Lab_Kesirler/Lab_Kesirler.csproj
   dotnet build Hafta06/Odev_KesirGelismis/Odev_KesirGelismis.csproj
   ```
+* **Hafta 7:**
+  ```bash
+  dotnet build Hafta07/Lab_IsimAlanlariVeKutuphane/Lab_IsimAlanlariVeKutuphane.sln
+  ```
 
 ### 3. Projeleri Çalıştırma (Run)
 * **Hafta 1:**
@@ -177,6 +189,10 @@ dotnet --version
   ```bash
   dotnet run --project Hafta06/Lab_Kesirler
   dotnet run --project Hafta06/Odev_KesirGelismis
+  ```
+* **Hafta 7:**
+  ```bash
+  dotnet run --project Hafta07/Lab_IsimAlanlariVeKutuphane/Hafta7_IsimAlanlari
   ```
 
 ---
