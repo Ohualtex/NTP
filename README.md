@@ -90,10 +90,14 @@ NTP/
 └── Hafta07/                      # 7. Hafta: İsim Alanları, Takma İsimler ve Kütüphane (.dll)
     ├── README.md                 # Hafta 7 özel dökümantasyonu
     ├── Hafta7_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
-    └── Lab_IsimAlanlariVeKutuphane/
-        ├── Lab_IsimAlanlariVeKutuphane.sln
-        ├── Hafta7_IsimAlanlari/  # Ana Konsol Uygulaması (Bankacilik/Oyun/Okul Hesap + Alias)
-        └── MatematikKutuphane/   # Sınıf Kütüphanesi (.dll — Islemler & MatematikKutuphane.Ileri)
+    ├── Lab_IsimAlanlariVeKutuphane/
+    │   ├── Lab_IsimAlanlariVeKutuphane.sln
+    │   ├── Hafta7_IsimAlanlari/  # Ana Konsol Uygulaması (Bankacilik/Oyun/Okul Hesap + Alias)
+    │   └── MatematikKutuphane/   # Sınıf Kütüphanesi (.dll — Islemler & MatematikKutuphane.Ileri)
+    └── Odev_MatematikKutuphane/   # Gelecek haftaya hazırlık ödevi (Alt İsim Alanları & AsalMi)
+        ├── Odev_MatematikKutuphane.sln
+        ├── MatematikKutuphane/   # Bölümlenmiş Alt İsim Alanları (Temel, Ileri, SayiTeorisi)
+        └── AnaProje/             # 1-20 Asallık Testi Konsol Uygulaması
 ```
 
 ---
@@ -108,7 +112,7 @@ NTP/
 | **04** | Diziler (Arrays), `static` Metotlar, Dizi Parametreleri, `params`, `Array.Sort` & `Array.Reverse` | [`Hafta04/`](Hafta04/)<br>• `Lab_DiziAnaliz`<br>• `Odev_OgrenciNotDizi` |  Tamamlandı |
 | **05** | Sınıflar, Property (get/set) Doğrulama, Yapıcı Metotlar (Constructor), Statik Sayaç ve Sabit Üyeler | [`Hafta05/`](Hafta05/)<br>• `Lab_Evim`<br>• `Odev_YapiciAsiriYukleme` |  Tamamlandı |
 | **06** | Operatör Aşırı Yükleme (`+`, `*`, `==`, `!=`), İndeksleyiciler (`this[int]`), Yapılar (`struct`) ve `enum` Sabitleri | [`Hafta06/`](Hafta06/)<br>• `Lab_Kesirler`<br>• `Odev_KesirGelismis` |  Tamamlandı |
-| **07** | İsim Alanları (`namespace`), Takma İsimler (`using alias`), Sınıf Kütüphanesi (`.dll`) ve İç İçe İsim Alanları | [`Hafta07/`](Hafta07/)<br>• `Lab_IsimAlanlariVeKutuphane` |  Lab Tamamlandı |
+| **07** | İsim Alanları (`namespace`), Takma İsimler (`using alias`), Sınıf Kütüphanesi (`.dll`) ve İç İçe İsim Alanları | [`Hafta07/`](Hafta07/)<br>• `Lab_IsimAlanlariVeKutuphane`<br>• `Odev_MatematikKutuphane` |  Tamamlandı |
 | **08+** | Kalıtım (Inheritance), Polimorfizm, Soyutlama (Abstraction), Arayüzler (Interfaces) | `Hafta08+/` | ⏳ Planlanan |
 
 ---
@@ -157,6 +161,7 @@ dotnet --version
 * **Hafta 7:**
   ```bash
   dotnet build Hafta07/Lab_IsimAlanlariVeKutuphane/Lab_IsimAlanlariVeKutuphane.sln
+  dotnet build Hafta07/Odev_MatematikKutuphane/Odev_MatematikKutuphane.sln
   ```
 
 ### 3. Projeleri Çalıştırma (Run)
@@ -193,6 +198,7 @@ dotnet --version
 * **Hafta 7:**
   ```bash
   dotnet run --project Hafta07/Lab_IsimAlanlariVeKutuphane/Hafta7_IsimAlanlari
+  dotnet run --project Hafta07/Odev_MatematikKutuphane/AnaProje
   ```
 
 ---

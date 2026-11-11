@@ -42,3 +42,19 @@ Bu haftanın detaylı yönergesi ve görev föyüne aşağıdaki dosyadan ulaşa
   dotnet run --project Hafta07/Lab_IsimAlanlariVeKutuphane/Hafta7_IsimAlanlari
   ```
 
+---
+
+### 2. `Odev_MatematikKutuphane/` (Gelecek Haftaya Hazırlık Ödevi)
+* **Açıklama:** Föydeki Bölüm 9 şartlarına uygun olarak büyütülen sınıf kütüphanesi (`.dll`), türlerin üç alt isim alanına bölünmesi ve `1–20` arası sayıların asallık durumunun test edilmesi.
+* **Alt İsim Alanları & Sınıflar:**
+  - `MatematikKutuphane.Temel.TemelIslemler`: `Topla`, `Faktoriyel`, `Us`.
+  - `MatematikKutuphane.Ileri.BilimselIslemler`: `Ebob`, `Ekok`, `Fibonacci`.
+  - `MatematikKutuphane.SayiTeorisi.SayiAnalizi`: $O(\sqrt{n})$ karmaşıklığında `public static bool AsalMi(int n)` ve `AraliktakiAsallar(int baslangic, int bitis)` metotları.
+  - `AnaProje/`: `1–20` arası tam sayıların asallık durumunu (`Asal` / `Asal Değil`) listeleyen ve tüm alt isim alanlarını doğrulayan test uygulaması.
+* **Derleme ve Çalıştırma:**
+  ```bash
+  dotnet build Hafta07/Odev_MatematikKutuphane/Odev_MatematikKutuphane.sln
+  dotnet run --project Hafta07/Odev_MatematikKutuphane/AnaProje
+  ```
+
+
