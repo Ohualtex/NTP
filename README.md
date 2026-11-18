@@ -101,9 +101,13 @@ NTP/
 └── Hafta08/                      # 8. Hafta: System İsim Alanı (String, Biçimlendirme & Regex)
     ├── README.md                 # Hafta 8 özel dökümantasyonu
     ├── Hafta8_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
-    └── Lab_MetinIsleme/          # Laboratuvar teslim projesi (Metin İşleme Aracı & Regex)
-        ├── Lab_MetinIsleme.csproj
-        ├── MetinAraci.cs
+    ├── Lab_MetinIsleme/          # Laboratuvar teslim projesi (Metin İşleme Aracı & Regex)
+    │   ├── Lab_MetinIsleme.csproj
+    │   ├── MetinAraci.cs
+    │   └── Program.cs
+    └── Odev_MetinIstatistigi/    # Gelecek haftaya hazırlık ödevi (Paragraf Metin İstatistiği)
+        ├── Odev_MetinIstatistigi.csproj
+        ├── MetinIstatistigi.cs
         └── Program.cs
 ```
 
@@ -120,7 +124,7 @@ NTP/
 | **05** | Sınıflar, Property (get/set) Doğrulama, Yapıcı Metotlar (Constructor), Statik Sayaç ve Sabit Üyeler | [`Hafta05/`](Hafta05/)<br>• `Lab_Evim`<br>• `Odev_YapiciAsiriYukleme` |  Tamamlandı |
 | **06** | Operatör Aşırı Yükleme (`+`, `*`, `==`, `!=`), İndeksleyiciler (`this[int]`), Yapılar (`struct`) ve `enum` Sabitleri | [`Hafta06/`](Hafta06/)<br>• `Lab_Kesirler`<br>• `Odev_KesirGelismis` |  Tamamlandı |
 | **07** | İsim Alanları (`namespace`), Takma İsimler (`using alias`), Sınıf Kütüphanesi (`.dll`) ve İç İçe İsim Alanları | [`Hafta07/`](Hafta07/)<br>• `Lab_IsimAlanlariVeKutuphane`<br>• `Odev_MatematikKutuphane` |  Tamamlandı |
-| **08** | `System` İsim Alanı: `String` İşlemleri, Biçimlendirme (`N`/`P`/`C`, Hizalama) ve Düzenli İfadeler (`Regex`) | [`Hafta08/`](Hafta08/)<br>• `Lab_MetinIsleme` |  Lab Tamamlandı |
+| **08** | `System` İsim Alanı: `String` İşlemleri, Biçimlendirme (`N`/`P`/`C`, Hizalama) ve Düzenli İfadeler (`Regex`) | [`Hafta08/`](Hafta08/)<br>• `Lab_MetinIsleme`<br>• `Odev_MetinIstatistigi` |  Tamamlandı |
 | **09+** | Kalıtım (Inheritance), Polimorfizm, Soyutlama (Abstraction), Arayüzler (Interfaces) | `Hafta09+/` | ⏳ Planlanan |
 
 ---
@@ -174,6 +178,7 @@ dotnet --version
 * **Hafta 8:**
   ```bash
   dotnet build Hafta08/Lab_MetinIsleme/Lab_MetinIsleme.csproj
+  dotnet build Hafta08/Odev_MetinIstatistigi/Odev_MetinIstatistigi.csproj
   ```
 
 ### 3. Projeleri Çalıştırma (Run)
@@ -215,6 +220,7 @@ dotnet --version
 * **Hafta 8:**
   ```bash
   dotnet run --project Hafta08/Lab_MetinIsleme
+  dotnet run --project Hafta08/Odev_MetinIstatistigi
   ```
 
 ---

@@ -36,3 +36,17 @@ Bu haftanın detaylı yönergesi ve görev föyüne aşağıdaki dosyadan ulaşa
   dotnet build Hafta08/Lab_MetinIsleme/Lab_MetinIsleme.csproj
   dotnet run --project Hafta08/Lab_MetinIsleme
   ```
+
+---
+
+### 2. `Odev_MetinIstatistigi/` (Gelecek Haftaya Hazırlık Ödevi)
+* **Açıklama:** Föydeki Bölüm 9 şartlarına uygun olarak girilen bir paragrafta kelime sayısını, boşluksuz karakter sayısını ve noktalama temizliğiyle en uzun kelimeyi bulan "Metin İstatistiği" konsol uygulaması.
+* **Sınıflar & İşlevler:**
+  - `MetinIstatistigi`: `AnalizEt(string?)` ile `Split` kelime ayrımı, `foreach` döngüsüyle boşluksuz karakter sayımı ve noktalama işaretlerinden arındırılmış en uzun kelime tespiti; `Yazdir()` ile hizalı raporlama.
+  - `Program`: Kullanıcıdan paragraf girdisi alma, boş girdi kontrolü ve istatistik çıktısını gösterme.
+* **Derleme ve Çalıştırma:**
+  ```bash
+  dotnet build Hafta08/Odev_MetinIstatistigi/Odev_MetinIstatistigi.csproj
+  dotnet run --project Hafta08/Odev_MetinIstatistigi
+  ```
+
