@@ -87,17 +87,24 @@ NTP/
 │       ├── Odev_KesirGelismis.csproj
 │       ├── Kesir.cs
 │       └── Program.cs
-└── Hafta07/                      # 7. Hafta: İsim Alanları, Takma İsimler ve Kütüphane (.dll)
-    ├── README.md                 # Hafta 7 özel dökümantasyonu
-    ├── Hafta7_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
-    ├── Lab_IsimAlanlariVeKutuphane/
-    │   ├── Lab_IsimAlanlariVeKutuphane.sln
-    │   ├── Hafta7_IsimAlanlari/  # Ana Konsol Uygulaması (Bankacilik/Oyun/Okul Hesap + Alias)
-    │   └── MatematikKutuphane/   # Sınıf Kütüphanesi (.dll — Islemler & MatematikKutuphane.Ileri)
-    └── Odev_MatematikKutuphane/   # Gelecek haftaya hazırlık ödevi (Alt İsim Alanları & AsalMi)
-        ├── Odev_MatematikKutuphane.sln
-        ├── MatematikKutuphane/   # Bölümlenmiş Alt İsim Alanları (Temel, Ileri, SayiTeorisi)
-        └── AnaProje/             # 1-20 Asallık Testi Konsol Uygulaması
+├── Hafta07/                      # 7. Hafta: İsim Alanları, Takma İsimler ve Kütüphane (.dll)
+│   ├── README.md                 # Hafta 7 özel dökümantasyonu
+│   ├── Hafta7_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
+│   ├── Lab_IsimAlanlariVeKutuphane/
+│   │   ├── Lab_IsimAlanlariVeKutuphane.sln
+│   │   ├── Hafta7_IsimAlanlari/  # Ana Konsol Uygulaması (Bankacilik/Oyun/Okul Hesap + Alias)
+│   │   └── MatematikKutuphane/   # Sınıf Kütüphanesi (.dll — Islemler & MatematikKutuphane.Ileri)
+│   └── Odev_MatematikKutuphane/   # Gelecek haftaya hazırlık ödevi (Alt İsim Alanları & AsalMi)
+│       ├── Odev_MatematikKutuphane.sln
+│       ├── MatematikKutuphane/   # Bölümlenmiş Alt İsim Alanları (Temel, Ileri, SayiTeorisi)
+│       └── AnaProje/             # 1-20 Asallık Testi Konsol Uygulaması
+└── Hafta08/                      # 8. Hafta: System İsim Alanı (String, Biçimlendirme & Regex)
+    ├── README.md                 # Hafta 8 özel dökümantasyonu
+    ├── Hafta8_Ogrenci_Foyu.pdf   # Laboratuvar görev föyü
+    └── Lab_MetinIsleme/          # Laboratuvar teslim projesi (Metin İşleme Aracı & Regex)
+        ├── Lab_MetinIsleme.csproj
+        ├── MetinAraci.cs
+        └── Program.cs
 ```
 
 ---
@@ -113,7 +120,8 @@ NTP/
 | **05** | Sınıflar, Property (get/set) Doğrulama, Yapıcı Metotlar (Constructor), Statik Sayaç ve Sabit Üyeler | [`Hafta05/`](Hafta05/)<br>• `Lab_Evim`<br>• `Odev_YapiciAsiriYukleme` |  Tamamlandı |
 | **06** | Operatör Aşırı Yükleme (`+`, `*`, `==`, `!=`), İndeksleyiciler (`this[int]`), Yapılar (`struct`) ve `enum` Sabitleri | [`Hafta06/`](Hafta06/)<br>• `Lab_Kesirler`<br>• `Odev_KesirGelismis` |  Tamamlandı |
 | **07** | İsim Alanları (`namespace`), Takma İsimler (`using alias`), Sınıf Kütüphanesi (`.dll`) ve İç İçe İsim Alanları | [`Hafta07/`](Hafta07/)<br>• `Lab_IsimAlanlariVeKutuphane`<br>• `Odev_MatematikKutuphane` |  Tamamlandı |
-| **08+** | Kalıtım (Inheritance), Polimorfizm, Soyutlama (Abstraction), Arayüzler (Interfaces) | `Hafta08+/` | ⏳ Planlanan |
+| **08** | `System` İsim Alanı: `String` İşlemleri, Biçimlendirme (`N`/`P`/`C`, Hizalama) ve Düzenli İfadeler (`Regex`) | [`Hafta08/`](Hafta08/)<br>• `Lab_MetinIsleme` |  Lab Tamamlandı |
+| **09+** | Kalıtım (Inheritance), Polimorfizm, Soyutlama (Abstraction), Arayüzler (Interfaces) | `Hafta09+/` | ⏳ Planlanan |
 
 ---
 
@@ -163,6 +171,10 @@ dotnet --version
   dotnet build Hafta07/Lab_IsimAlanlariVeKutuphane/Lab_IsimAlanlariVeKutuphane.sln
   dotnet build Hafta07/Odev_MatematikKutuphane/Odev_MatematikKutuphane.sln
   ```
+* **Hafta 8:**
+  ```bash
+  dotnet build Hafta08/Lab_MetinIsleme/Lab_MetinIsleme.csproj
+  ```
 
 ### 3. Projeleri Çalıştırma (Run)
 * **Hafta 1:**
@@ -199,6 +211,10 @@ dotnet --version
   ```bash
   dotnet run --project Hafta07/Lab_IsimAlanlariVeKutuphane/Hafta7_IsimAlanlari
   dotnet run --project Hafta07/Odev_MatematikKutuphane/AnaProje
+  ```
+* **Hafta 8:**
+  ```bash
+  dotnet run --project Hafta08/Lab_MetinIsleme
   ```
 
 ---
